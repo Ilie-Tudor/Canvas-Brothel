@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drawing with canvas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css_file_1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background: lightslategrey">
+    <div id="titleBox" style="background: darkolivegreen;">
+        <h1>
+            Lots of Circles
+        </h1>
+    </div>
+
+
+    <%- include("./components/navbarAnimations.ejs",{style: 'darkolivegreen;'}) %> 
+    
+
+    <div id="content">
+        <div id="description">Just a beautifull animation of some randomly spawned circles</div>
+        <div>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+   
+    <script src="/CanvasFiles/Lots_of_Circles.js"></script>
+
+</body>
+
+</html>

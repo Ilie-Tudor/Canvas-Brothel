@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body style="background: darkslategrey;">
+
+    <div id="titleBox" style="background: saddlebrown;">
+        <h1>
+            Tick Tack Toe Game
+        </h1>
+    </div>
+    
+    <%- include("./components/navbarGames.ejs",{style: 'saddlebrown;'}) %> 
+
+
+    <link rel="stylesheet" href="/CanvasFiles/Tic_Tac_Toe_game.css">
+    <div id="content">
+        <div class="playersName">
+            <input id="player1" type="text" placeholder="Player 1 name: " >
+            vs
+            <input id="player2" type="text" placeholder="Player 2 name: ">
+        </div>
+        <div id="messageBox" class="messageBox">Complete the players names and press play to start</div>
+
+        <div class="gameTable">
+            <div class="tableBox"><button class="tableButton" id="b1"></button></div>
+            <div class="tableBox"><button class="tableButton" id="b2"></button></div>
+            <div class="tableBox"><button class="tableButton" id="b3"></button></div>
+
+            <div class="tableBox"><button class="tableButton" id="b4"></button></div>
+            <div class="tableBox"><button class="tableButton" id="b5"></button></div>
+            <div class="tableBox"><button class="tableButton" id="b6"></button></div>
+
+            <div class="tableBox"><button class="tableButton" id="b7"></button></div>
+            <div class="tableBox"><button class="tableButton" id="b8"></button></div>
+            <div class="tableBox"><button class="tableButton" id="b9"></button></div>
+        </div>
+
+        <button id="actionsButton">Play</button>
+
+
+    </div>
+
+
+
+    <script src="/CanvasFiles/Tic_Tac_Toe_game.js"></script>
+</body>
+
+</html>

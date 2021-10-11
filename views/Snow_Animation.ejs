@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drawing with canvas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="titleBox" style="background: maroon;">
+        <h1>
+            Snow Animation
+        </h1>
+    </div>
+
+
+    <%- include("./components/navbarAnimations.ejs",{style: 'maroon;'}) %> 
+
+
+    <div id="content">
+        <div id="description">You like snow? Good, so do I! Let's enjoy a wonderfull snow storm animation. Don't forget the hot coffe.</div>
+        <div>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="/CanvasFiles/Snow_Animation.js"></script>
+</body>
+
+</html>

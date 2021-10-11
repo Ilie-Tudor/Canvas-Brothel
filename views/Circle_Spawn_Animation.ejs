@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Drawing with canvas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body style="background: gray;">
+        <div id="titleBox" style="background: darkred;">
+            <h1 >
+                Circle Spawn Animation
+            </h1>
+        </div>
+        <%- include("./components/navbarAnimations.ejs",{style: 'darkred;'}) %> 
+        
+        <div id="content" >
+            <div id="description">Move your mouse on the screen and see what happens!</div>
+            <div>
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+        
+        <script src="/CanvasFiles/Circle_Spawn_Animation.js"></script>
+    </body>
+    
+    </html>

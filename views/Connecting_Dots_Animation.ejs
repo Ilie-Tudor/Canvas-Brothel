@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drawing with canvas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="titleBox" style="background: black;">
+        <h1>
+            Connecting Dots Animation
+        </h1>
+    </div>
+    
+    <%- include("./components/navbarAnimations.ejs",{style: 'black;'}) %> 
+    
+
+    <div id="content">
+        <div id="description">This animation consists of some clusters of dots, some of them connected by vertices, having initial randomised speeds in a confined space</div>
+        <div>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="../Reusable/reuse_script.js"></script>
+    <script src="../Reusable/pageDesign.js"></script>
+    <script src="/CanvasFiles/Connecting_Dots_Animation.js"></script>
+</body>
+
+</html>

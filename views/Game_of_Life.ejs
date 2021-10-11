@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drawing with canvas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background: lightsteelblue;">
+    <div id="titleBox" style="background:peru">
+        <h1>
+            Game of Life
+        </h1>
+    </div>
+
+
+    <%- include("./components/navbarGames.ejs",{style: 'peru;'}) %> 
+
+    
+
+    <div id="content">
+        <div id="description">This is the Conway's Game of Life. If you want to find out more about this beautiful animation please visit this page <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game Of Life</a> </div>
+        <div>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="/CanvasFiles/Game_of_Life.js"></script>
+    
+</body>
+
+</html>

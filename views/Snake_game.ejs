@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drawing with canvas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="background: teal;">
+    <div id="titleBox" style="background: olivedrab;">
+        <h1>
+            Snake Game
+        </h1>
+    </div>
+
+
+    <%- include("./components/navbarGames.ejs",{style: 'olivedrab;'}) %> 
+
+    
+
+    <div id="content">
+        <div id="description">The green square is the snake, the red circle is the pray. Move with W A S D, and try not to eat yourself. If you die the game restarts automatically</div>
+        <div>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+
+
+
+
+
+
+   
+    <script src="/CanvasFiles/Snake_game.js"></script>
+</body>
+
+</html>
